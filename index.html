@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Gihoc Website</title>
+  </head>
+  <body>
+    <!--navbar-->
+    <nav class="nav">
+      <!-- <ion-icon class="beer-btn" name="beer"></ion-icon> -->
+      <ion-icon class="burger-btn" name="grid-outline"></ion-icon>
+      <h2 class="logo">Gihoc Distilleries</h2>
+      <div class="nav-menus">
+        <a href="#">Home</a>
+        <a href="#poducts">Our Products</a>
+        <a href="#story">About</a>
+        <a href="#testimonial">Testimoinials</a>
+      </div>
+      <div class="nav-right">
+        <ion-icon name="search-outline"></ion-icon>
+        <ion-icon name="cart-outline"></ion-icon>
+      </div>
+    </nav>
+
+    <header>
+      <div class="header-top">
+        <div class="top-left">
+          <h1>
+            <span>Perfect </span>Time for<br />
+            Perfect <span>Alcohol</span>
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
+            hic ipsam officia sunt vero asperiores, voluptatum tempora. Deserunt
+            repudiandae perspiciatis, saepe amet odio sequi blanditiis provident
+            quia repellendus dolor nisi?
+          </p>
+          <button class="header-btn">See Our Drinks</button>
+        </div>
+        <div class="top-right"><img src="images/Gih_prods.jpg" /></div>
+      </div>
+      <div class="header-bottom">
+        <div class="header-detail">
+          <h2>8+</h2>
+          <p>Our Catalogue</p>
+        </div>
+        <div class="header-detail">
+          <h2>200+</h2>
+          <p>Daily orders</p>
+        </div>
+        <div class="header-detail">
+          <h2>3+</h2>
+          <p>Branch stores</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- product -->
+    <section class="product" id="product">
+      <h2 class="title">The magnificent products we have</h2>
+      <div class="product-filter">
+        <button class="btn-filter" data-filter="*">All</button>
+        <button class="btn-filter" data-filter=".premuim">Premium</button>
+        <button class="btn-filter" data-filter=".non-premium">
+          Non Premium
+        </button>
+        <button class="btn-filter" data-filter=".water">Water</button>
+      </div>
+      <div class="product-list" data-ref="product-list">
+        <div class="product-card premuim" data-order="1">
+          <div class="product-image">
+            <img src="images/takai.png" />
+          </div>
+          <div class="product-detail">
+            <h4>Takai</h4>
+            <small
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit.</small
+            >
+            <div class="product-price">
+              <p>$ 14.2</p>
+              <ion-icon class="heart" name="heart"></ion-icon>
+            </div>
+          </div>
+        </div>
+        <div class="product-card premuim" data-order="2">
+          <div class="product-image">
+            <img src="images/Madingo.png" />
+          </div>
+          <div class="product-detail">
+            <h4>Madingo Premium</h4>
+            <small
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit.</small
+            >
+            <div class="product-price">
+              <p>$ 8.6</p>
+              <ion-icon class="heart" name="heart"></ion-icon>
+            </div>
+          </div>
+        </div>
+        <div class="product-card non-premium" data-order="3">
+          <div class="product-image">
+            <img src="images/herbArik.png" />
+          </div>
+          <div class="product-detail">
+            <h4>Herb Afrik</h4>
+            <small
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit.</small
+            >
+            <div class="product-price">
+              <p>$ 12.3</p>
+              <ion-icon class="heart" name="heart"></ion-icon>
+            </div>
+          </div>
+        </div>
+        <div class="product-card non-premium" data-order="4">
+          <div class="product-image">
+            <img src="images/apetGin.png" />
+          </div>
+          <div class="product-detail">
+            <h4>Apet Gin</h4>
+            <small
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit.</small
+            >
+            <div class="product-price">
+              <p>$ 10.5</p>
+              <ion-icon class="heart" name="heart"></ion-icon>
+            </div>
+          </div>
+        </div>
+        <div class="product-card premuim" data-order="5">
+          <div class="product-image">
+            <img src="images/afrikPremium.png" />
+          </div>
+          <div class="product-detail">
+            <h4>Herb Afrik Premium</h4>
+            <small
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit.</small
+            >
+            <div class="product-price">
+              <p>$ 17.5</p>
+              <ion-icon class="heart" name="heart"></ion-icon>
+            </div>
+          </div>
+        </div>
+        <div class="product-card water" data-order="5">
+          <div class="product-image">
+            <img src="images/water.png" />
+          </div>
+          <div class="product-detail">
+            <h4>Meridian Water</h4>
+            <small
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit.</small
+            >
+            <div class="product-price">
+              <p>$ 17.5</p>
+              <ion-icon class="heart" name="heart"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story" id="story">
+      <div class="story-left">
+        <div class="story-column">
+          <img src="images/Gih_prods.jpg" />
+          <img src="images/gihoc_distil_co_ltd_cover.jpg" />
+        </div>
+        <div class="story-column">
+          <img src="images/Gih_prods.jpg" />
+          <img src="images/gihoc_distil_co_ltd_cover.jpg" />
+        </div>
+        <div class="story-column">
+          <img src="images/Gih_prods.jpg" />
+          <img src="images/gihoc_distil_co_ltd_cover.jpg" />
+        </div>
+      </div>
+      <div class="story-right">
+        <h2 class="title">Our story for the best <br />Drinks in Ghana</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+          similique quae nihil totam vel vero numquam aspernatur quos, beatae
+          quisquam fugit ducimus assumenda, unde modi quas nisi dignissimos
+          repellat perspiciatis.
+        </p>
+      </div>
+    </section>
+
+    <!-- testimonies -->
+    <section class="testimonial" id="testimonial">
+      <h2 class="title">Our Customers Say</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
+              assumenda rerum tempore, laborum fugit, molestias aperiam numquam
+              voluptatum quas nemo doloribus doloremque placeat cupiditate harum
+              reprehenderit ullam aspernatur autem expedita?
+            </p>
+            <div class="testimonial-pic">
+              <img src="images/user.png">
+              <h4>Yeboah Mensah</h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
+              assumenda rerum tempore, laborum fugit, molestias aperiam numquam
+              voluptatum quas nemo doloribus doloremque placeat cupiditate harum
+              reprehenderit ullam aspernatur autem expedita?
+            </p>
+            <div class="testimonial-pic">
+              <img src="images/user.png">
+              <h4>Tony Arnold</h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
+              assumenda rerum tempore, laborum fugit, molestias aperiam numquam
+              voluptatum quas nemo doloribus doloremque placeat cupiditate harum
+              reprehenderit ullam aspernatur autem expedita?
+            </p>
+            <div class="testimonial-pic">
+              <img src="images/user.png">
+              <h4>Anna York</h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
+              assumenda rerum tempore, laborum fugit, molestias aperiam numquam
+              voluptatum quas nemo doloribus doloremque placeat cupiditate harum
+              reprehenderit ullam aspernatur autem expedita?
+            </p>
+            <div class="testimonial-pic">
+              <img src="images/user.png">
+              <h4>Steven Garry</h4>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+  </body>
+  <!-- add filter library for product -->
+  <script src="https://cdn.jsdelivr.net/npm/mixitup/dist/mixitup.min.js"></script>
+  <script src="app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+</html>
