@@ -433,6 +433,7 @@ footer{
         position: absolute;
         top: 0;
         bottom: 0;
+        left: 0;
         width: 60%;
         height: 100vh;
         text-align: center;
@@ -442,16 +443,42 @@ footer{
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
 
+    .swiper-slide p{
+        line-height: 1;
+        font: 12px;
+    }
+
+    .swiper-wrapper{
+        height: 100% !important;
+    }
+
     .nav-menus.active{
         display: flex;
     }
 
     .nav-menus >a {
-        color: var(--logocolor);
+        color: var(--whiteColor);
         padding: 1.5rem 0;
     }
 
     .top-left h1{
         font-size: 44px;
     }
+
+    .title{
+        font-size: 30px;
+    }
+
+    .product-list{
+        gap: 1rem;
+    }
+
+    .product-card{
+        max-width: 120px;
+    }
+
+    .product-image{
+        height: 100px;
+    }
+    
 }

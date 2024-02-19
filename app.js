@@ -3,16 +3,35 @@ document.addEventListener("DOMContentLoaded", function() {
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
         if (scroll > 50){
-            $("nav").css("background", "#fff");
+            $(".nav").css("background", "#fff");
             $(".nav").css("box-shadow","rgba(0,0,0,0.1)0px 4px 12px");
         }
         else {
-            $("nav").css("background", "transparent");
-            $("nav").css("box-shadow", "none");
+            $(".nav").css("background", "transparent");
+            $(".nav").css("box-shadow", "none");
         }
     })
+
+    //mobile emulator
+    const mobile = document.querySelector(".burger-btn");
+    const mobileLink = document.querySelector(".nav-menus");
+
+    mobile.addEventListener("click", function () {
+        mobile.classList.toggle("is-active");
+        mobileLink.classList.toggle("active");
+    })
+
+    //close menu on click
+    mobileLink.addEventListener("click", function () {
+        const menuBars = document.querySelector(".is-active");
+        if (window.innerWidth <=768 && menuBars){
+            mobile.classList.toggle("is-active");
+            mobileLink.classList.remove("active");
+        }
+    })
+
+    // heart
     const heartIcons = document.querySelectorAll(".heart");
-// heart
     heartIcons.forEach(icon => {
         icon.addEventListener("click", function() {
             this.classList.toggle("is-active");
