@@ -420,3 +420,38 @@ footer{
     font-size: 14px;
     margin: 1rem;
 }
+
+@media screen and (max-width:680px) {
+    .burger-btn {
+        display: block;
+        z-index: 20;
+        cursor: pointer;
+    }
+
+    .nav-menus{
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 60%;
+        height: 100vh;
+        text-align: center;
+        background-color: #020d6b;
+        display: none;
+        padding: 5rem 0;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .nav-menus.active{
+        display: flex;
+    }
+
+    .nav-menus >a {
+        color: var(--logocolor);
+        padding: 1.5rem 0;
+    }
+
+    .top-left h1{
+        font-size: 44px;
+    }
+}

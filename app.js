@@ -1,4 +1,16 @@
 document.addEventListener("DOMContentLoaded", function() {
+    //change color when scrolling
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll > 50){
+            $("nav").css("background", "#fff");
+            $(".nav").css("box-shadow","rgba(0,0,0,0.1)0px 4px 12px");
+        }
+        else {
+            $("nav").css("background", "transparent");
+            $("nav").css("box-shadow", "none");
+        }
+    })
     const heartIcons = document.querySelectorAll(".heart");
 // heart
     heartIcons.forEach(icon => {
