@@ -230,7 +230,7 @@ header {
 }
 
 .product-detail small{
-    color: var(--secondaryColor);
+    color: var(--logocolor);
     font-size: 12px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -298,4 +298,125 @@ header {
 .story-right p{
     margin-top: 2rem;
     line-height: 2;
+}
+
+.testimonial{
+    width: 100%;
+    text-align: center;
+    padding: 5%;
+}
+
+.swiper{
+    width:80%;
+    height: 300px;
+    margin-top: 2rem;
+}
+
+.swiper-wrapper{
+    height: 80% !important;
+}
+
+.swiper-slide{
+    background-color: var(--whiteColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 10px;
+    color: var(--fontColor);
+}
+
+.swiper-slide p{
+    line-height: 2;
+    font: 14px;
+}
+
+.swiper-slide h4{
+    font-family: 'Biter', serif;
+    color: var(--logocolor);
+    
+}
+
+.testimonial-pic{
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.testimonial-pic img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    padding: 5%;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--whiteColor);
+}
+
+.footer-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    align-items: center;
+}
+
+.footer-btn {
+    padding: 0.5rem 1rem;
+    margin: 1rem 0.5rem 0 0;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.btn-type1{
+    background-color: #020d6b;
+    border: 1px solid var(--logocolor);
+    color: var(--whiteColor);
+}
+
+.btn-type2{
+    background-color: transparent;
+    border: 1px solid var(--logocolor);
+}
+
+.divider{
+    width: 100%;
+    margin: 1rem 0;
+    border: 0.5px solid var(--lightColor);
+}
+
+.footer-logo{
+    font-family: 'Bitter',serif;
+    color: var(--logocolor);
+    font-size: 40px;
+    letter-spacing: 2;
+    margin: 1rem 0;
+}
+
+.media-icon{
+    font-size: 24px;
+    margin-top: 5rem;
+    padding: 1rem;
+    color: var(--primaryColor);
+    text-decoration: none;
+}
+
+.media-icon :hover{
+    color: #020d6b;
+}
+
+.copyright{
+    font-size: 14px;
+    margin: 1rem;
 }
