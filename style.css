@@ -470,15 +470,20 @@ footer{
     }
 
     .product-list{
-        gap: 1rem;
+        /* gap: 1rem; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .product-card{
-        max-width: 120px;
+        /* max-width: 120px; */
+        flex-direction: column; 
+        max-width: none; 
     }
 
     .product-image{
-        height: 100px;
+        height: 200px;
     }
     
 }
